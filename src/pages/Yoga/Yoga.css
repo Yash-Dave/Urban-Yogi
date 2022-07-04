@@ -1,0 +1,162 @@
+.yoga-container {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.yoga-pose-container {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.secondary-btn {
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 10px auto 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: rgba(125, 125, 125, 0.1);
+    border-width: 5px;
+    background-color: rgba(0, 0, 0,0.2);
+    box-shadow: 0px 0px 0px 0px;
+    color: white;
+}
+.secondary-btn a{
+text-decoration: none;
+color:white;
+}
+
+.secondary-btn:hover {
+    background-color: rgba(0, 0, 0,0.4);
+}
+
+.secondary-btn:hover a{
+    color:black;
+}
+
+.starting-contdown {
+    margin: auto;
+    border: 10px solid rgba(125, 125, 125, 0.5);
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0);
+    position: relative;
+    top: 45%;
+}
+.starting-contdown h1 {
+    color: white;
+}
+.pose-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 1;
+}
+.pose-img img{
+    width: 300px;
+
+}
+
+.performance-container {
+    display: flex;
+    padding: 20px;
+}
+
+
+.pose-performance {
+    margin: 10px 10px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+.pose-performance h4 {
+    color: rgba(0,0,0,0.7);
+}
+
+#webcam {
+    transform: rotateY(180deg);
+    padding: "0px";
+    position: relative;
+    
+}
+
+#my-canvas {
+    transform: rotateY(180deg);
+    z-index: 1;
+    position: absolute;
+    top:0;
+    left:20;
+}
+
+.yoga-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.yoga-top-logo{
+    width: 100px;
+    margin-right: 30%;
+}
+
+.pose-detection{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+        transform: translateY(-50px);
+}
+
+.detection-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+    .yoga-top-logo{
+        margin-right: 0;
+        width: 80px;
+    }
+    .pose-detection{
+        flex-direction: column;
+        justify-content: space-between;
+        transform: translateY(0);
+    }
+    .detection-container{
+        justify-content: space-evenly;
+    }
+    .performance-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}

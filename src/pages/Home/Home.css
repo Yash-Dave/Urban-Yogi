@@ -1,0 +1,99 @@
+
+.home-header {
+    background-color : #FEFCFB;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.home-container {
+    background: #FEFCFB;
+    width: 100%;
+    height: 100vh;
+}
+.header-btn:hover {
+    border-color: black;
+}
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.home-heading {
+    width: 7%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 44px;
+    margin-left: 30px;
+    color: #000000;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.home-main {
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 80%;    
+    /* background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.8)), url('../../utils/images/yoga_pose.png') ; */
+    background-color : #FEFCFB;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description {
+    font-size: 66px;
+    color: #000000;
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 10px 20px 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    font-size: 1rem;
+    border-color: #FFA500;
+    border-radius: 8px;
+    border-width: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: rgba(255,165,0, 0.2);
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#about-btn {
+    padding: 5px 10px;
+    border-color: #78290f;
+}
+#about-btn:hover {
+    border-color: #FFA500;
+    background-color: #FEFCFB;
+    color: #000000;
+}
+
+@media screen and (max-width:768px) {
+    .home-heading {
+      width: 20%;
+    }
+  }

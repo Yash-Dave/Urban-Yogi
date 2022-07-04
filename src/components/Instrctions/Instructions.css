@@ -1,0 +1,42 @@
+.instructions-list {
+  width: 40%;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.instruction {
+  margin: 10px;
+  letter-spacing: 0.5px;
+  color: white;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.instructions-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.pose-demo-img {
+  height: 400px;
+  aspect-ratio: 1;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .instructions-container {
+    flex-direction: column-reverse;
+  }
+  .instructions-list {
+    width: 100%;
+    font-size: 0.75rem;
+    padding: 20px;
+  }
+  .pose-demo-img{
+      height: 200px;
+      margin-top: 20px;
+  }
+}
